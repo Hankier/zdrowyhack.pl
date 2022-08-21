@@ -1,0 +1,26 @@
+{{- $signin       := .Site.Params.signin }}
+{{- $title      := index $signin "title" }}
+{{- $subtitle   := index $signin "subtitle" }}
+{{- $form       := index $signin "form" }}
+{{- $note       := index $signin "note" }}
+<section class="section is-medium section-light-nd" id="signin">
+  <div class="container">
+    <div class="title-wrapper has-text-centered">
+        <h2 class="title is-2">{{ $title }}</h2>
+      <h3 class="subtitle is-5 is-muted">
+        {{ $subtitle }}
+      </h3>
+      <div class="divider is-centered"></div>
+    </div>
+    <div class="content-wrapper">
+        <p>
+        {{ $form |  safeHTML }}
+        </p>
+            <div class='legal-info'>
+            <p>
+            {{ $note }}
+            </p>
+          </div>
+    </div>
+  </div>
+</section>

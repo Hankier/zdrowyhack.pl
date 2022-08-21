@@ -1,0 +1,35 @@
+{{- $inside := .Site.Params.inside }}
+{{- $title    := index $inside "title" }}
+{{- $subtitle := index $inside "subtitle" }}
+{{- $features := index $inside "features" }}
+
+<section class="section is-medium">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-centered-tablet-portrait">
+          <h1 class="title section-title">{{ $title }}</h1>
+          <h3 class="subtitle is-5 is-muted">{{ $subtitle }}</h3>
+        <div class="divider"></div>
+      </div>
+      <div class="column is-7 mt-60">
+
+        {{- range $features }}
+        <article class="media icon-box">
+          <div class="media-content ">
+            <div class="content">
+              <p>
+                <p class = "title is-3">
+                <i class="{{ .icon }}"></i> {{ .title }}</p>
+                <p class = "subtitle is-4">
+                {{ .text }}
+                </p>
+              </p>
+            </div>
+          </div>
+        </article>
+        {{- end }}
+
+      </div>
+    </div>
+  </div>
+</section>

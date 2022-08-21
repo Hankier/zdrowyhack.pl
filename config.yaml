@@ -1,0 +1,123 @@
+baseURL: http://zdrowyhack.hqr.sh/
+languageCode: pl-pl
+title: Zdrowyhack to biohackingowy newsletter. 
+theme: hugo-fresh
+googleAnalytics: # Put in your tracking code without quotes like this: UA-XXXXXX...
+# Disables warnings
+disableKinds:
+- taxonomy
+- taxonomyTerm
+markup:
+  goldmark:
+    renderer:
+      unsafe: true # Allows you to write raw html in your md files
+
+params:
+  # Open graph allows easy social sharing. If you don't want it you can set it to false or just delete the variable
+  openGraph: true
+  # Used as meta data; describe your site to make Google Bots happy
+  description: Pokażemy Ci jak żyć lepiej, być bardziej efektywnym i skupionym.
+  navbarlogo:
+  # Logo (from static/images/logos/___)
+    image: zh-logo.png
+    url: 'http://zdrowyhack.hqr.sh/'
+  font:
+    name: "Open Sans"
+    sizes: [400,600]
+  hero:
+    # Main hero title
+    title: Zapisz się już dziś!
+    # Hero subtitle (optional)
+    subtitle: Zdrowyhack to biohackingowy newsletter. Pokażemy Ci jak żyć lepiej, być bardziej efektywnym i skupionym, jak czuć się lepiej i być zdrowszym, poprzemy to najaktualniejszymi dostępnymi badaniami naukowymi.
+    form: <div class="_form_9"></div><script src="https://hqr.activehosted.com/f/embed.php?id=9" type="text/javascript" charset="utf-8"></script>
+    note: Uzupełnienie powyższego pola stanowi zgodę na otrzymywanie od XYZsiedzibą w ZYW, newslettera zawierającego treści informacyjne, marketingowe. Zgodę można wycofać w każdym czasie. Wycofanie zgody nie ma wpływu na zgodność z prawem przetwarzania dokonanego przed jej wycofaniem.
+    image: zh-transparent.png
+    # # Footer logos (from static/images/logos/clients/___.svg)
+    #clientlogos:
+    #- systek
+    #- tribe
+    #- kromo
+    #- infinite
+    #- gutwork
+  # Customizable navbar. For a dropdown, add a "sublinks" list.
+  navbar:
+  - title: Korzyści
+    url: 'http://zdrowyhack.hqr.sh/#features'
+  - title: Wersja Pro
+    url: 'http://zdrowyhack.hqr.sh/#pricing'
+  - title: Cennik
+    url: 'http://zdrowyhack.hqr.sh/#pricing'
+  - title: Twórcy
+    url: "http://zdrowyhack.hqr.sh/#about"
+  - title: Zapisz się
+    url: 'http://zdrowyhack.hqr.sh/#signin'
+    button: true
+  section1: false
+  inside:
+    title: Co otrzymasz?
+    subtitle: 
+    features:
+    - title: Mailing
+      text: Pierwszą rzeczą, którą musisz wiedzieć jest to, że będzie on zawierał dwa newslettery - jeden o 14 w drugi i czwarty piątek każdego miesiąca. Będzie zawierał porady biohackingowe, ciekawostki, wiedzę i treści. Drugi to zbiór linków zakupowych produktów biohackingowych. Będzie się pojawiał w ostatni piątek każdego miesiąca.
+      icon: fa-solid fa-envelope
+    - title: Badania
+      text: Każda wskazówka będzie poparta badaniami, tak abyś mógł czuć się pewnie w swoich decyzjach podczas wdrażania ich do swojej rutyny. 
+      icon: fa-solid fa-people-group
+    - title: Oszczędność czasu
+      text: Nie musisz wiedzieć wszystkiego i to jest w porządku. Po co spędzać godziny na poszukiwaniu wysokiej jakości produktów, po co poświęcać tygodnie na naukę danego tematu, skoro wystarczy, że zasubskrybujesz newsletter?
+      icon: fa-solid fa-clock
+    - title: Zawsze na bieżąco 
+      text: Będziesz na bieżąco ze wszystkimi nowinkami dotyczącymi poprawy funkcjonowania organizmu, lepszego treningu i koncentracji.
+      icon: fa-solid fa-calendar-check
+    - title: Dodatki
+      text: Od czasu do czasu będziemy opisywać nasze doświadczenia i spostrzeżenia z rzeczy, które ostatnio wdrożyliśmy do naszej rutyny. Podzielimy się ciekawą książką/artykułem lub przepisem na zdrowe jedzenie.
+      icon: fa-solid fa-book
+    - title: Społeczność
+      text: W przyszłości chcemy również zbudować społeczność pozwalającą, dzielić się wiedzą i doświadczeniami, w której będziesz mógł zadawać pytania, które Cię nurtują - i otrzymywać odpowiedzi od innych członków.
+      icon: fa-solid fa-people-group
+  section2: false
+  text: true
+  section5: false
+  about: false
+  pricing: true
+  signin: 
+    title: Zapisz się już dziś!
+    # Hero subtitle (optional)
+    subtitle:  Jesteśmy podekscytowani tym nowym sposobem dzielenia się informacjami - będziesz mógł śledzić nas, gdy będziemy wypróbowywać nowe rzeczy.
+    form: <div class="_form_9"></div><script src="https://hqr.activehosted.com/f/embed.php?id=9" type="text/javascript" charset="utf-8"></script>
+    note: Uzupełnienie powyższego pola stanowi zgodę na otrzymywanie od XYZsiedzibą w ZYW, newslettera zawierającego treści informacyjne, marketingowe. Zgodę można wycofać w każdym czasie. Wycofanie zgody nie ma wpływu na zgodność z prawem przetwarzania dokonanego przed jej wycofaniem.
+  footer:
+    # Logo (from /images/logos/___)
+    logo: zh-transparent.png
+    # Social Media Title
+    socialmediatitle: Social Media
+    # Social media links (GitHub, Twitter, etc.). All are optional.
+    socialmedia:
+      # Icons are from Font Awesome
+    - link: https://www.linkedin.com/in/grzegorzcwiklinski/
+      icon: 'fa-brands fa-linkedin'
+    - link: instagram.com/hankier.hqr/
+      icon: 'fa-brands fa-instagram'
+    - link: https://www.facebook.com/hqrpl
+      icon: 'fa-brands fa-facebook'
+    - link: https://twitter.com/Hankier_hqr
+      icon: 'fa-brands fa-twitter'
+    bulmalogo: true
+    quicklinks:
+      column1:
+        title: "Dokumenty"
+        links:
+        - text: Regulamin
+          link: /regulamin
+        - text: Polityka prywatności
+          link: /polityka-prywatnosci
+      column2:
+        title: "Twórcy"
+        links:
+        - text: hqr.sh
+          link: https://hqr.sh/about/
+      column3:
+        title: "Founders"
+        links:
+        - text: Bądź pierwszy!
+          link: "http://zdrowyhack.hqr.sh/#founder"
